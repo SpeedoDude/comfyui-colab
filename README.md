@@ -4,6 +4,17 @@
 
 ## 🚦 WIP 🚦
 
+## 🚀 How to Launch on Google Colab
+
+1. **Choose a notebook** – Find the model you want to use in the [🦒 Colab](#-colab) table below and click the **Open In Colab** badge in the `lite`, `stable`, or `nightly` column.
+2. **Sign in** – Make sure you are signed in to your Google account.
+3. **Enable GPU** – Go to **Runtime → Change runtime type**, set **Hardware accelerator** to **GPU** (T4 is free; A100/V100 require Colab Pro), then click **Save**.
+4. **Run the notebook** – Click **Runtime → Run all** (or press `Ctrl+F9`). The cell will install dependencies, download the selected model, and start a Cloudflare tunnel.
+5. **Open the UI** – After all cells finish, a public URL ending in `.trycloudflare.com` is printed in the output. Click it to open the ComfyUI interface in your browser.
+6. **Generate images** – Load or build a workflow inside ComfyUI, then click **Queue Prompt** to generate images. Use the template JSON files from the [🖼 Template](#-template) section as starting points.
+
+> **Note:** Free Colab sessions disconnect after ~12 hours of inactivity. Re-run the notebook to start a new session.
+
 ## 🖼 Template
 | Image | Json | Info
 | --- | --- | :---: |
